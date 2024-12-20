@@ -70,3 +70,7 @@ print(hash_table.search(15))  # False
 
 hash_table.delete(20)
 print(hash_table.search(20))  # False
+
+# Separate Chaining on tavaliselt eelistatud, kui on palju kokkupõrkeid. Halvemal juhul, kui kõik võtmed satuvad ühte lahtrisse, võib see aga halveneda O(n)-ks.
+# Eelised: Madalam täitumusaste, Mälu efektiivsus, Kergem kokkupõrgete lahendamine, Ei ole rehashingut
+# Miinused: Ruumikulu, Sõltuvus kokkupõrkete arvust, Halb mälu korralik haldamine
